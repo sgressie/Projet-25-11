@@ -1,0 +1,240 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+/*********************************************************************************NAV BAR*********************************************************************************************************/
+/* Navbar avec fond jaune et hauteur épaisse */
+.navbar-custom {
+    background-color: #000000; /* Jaune */
+    padding: 20px 0; /* Augmente l'épaisseur de la navbar */
+    height: auto; /* Hauteur ajustée automatiquement en fonction du contenu */
+}
+
+/* Centrer le logo horizontalement dans la navbar */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centre le logo horizontalement */
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%); /* Centre également verticalement */
+    margin: 0;
+}
+
+/* Conteneur du cercle sous le logo */
+.logo-circle {
+    width: 100px; /* Largeur du cercle */
+    height: 90px; /* Hauteur du cercle (le même que la largeur pour faire un cercle parfait) */
+    background-color: #ffffff; /* Couleur de fond du cercle (ici blanc) */
+    border-radius: 50%; /* Crée un cercle */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrer l'image dans le cercle */
+    margin-top: 10px; /* Espacement entre le logo et le cercle */
+    background-color: #ffc107;
+}
+/*********************************************************************************FIN NAV BAR*********************************************************************************************************/
+/*********************************************************************************BODY*********************************************************************************************************/
+  /* Section Hero */
+  .hero-section {
+    display: flex; /* Use flexbox for layout */
+    height: 100vh; /* Full viewport height */
+    background: url('../img/Action/alita.jpg') no-repeat center center;
+    background-size: cover; /* Ensures image covers the entire section */
+    position: relative;
+    color: white;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center center;
+  }
+
+  /* Hero Content (Text on the left) */
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 50%; /* Take up half the width of the hero section */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+   
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .btn-lg {
+    background-color: #ffcc00;
+    color: black;
+    font-size: 1.2rem;
+    margin-left: 0%;
+  }
+
+  /* Parallax Effect - Large Screens (Desktop) */
+  @media (min-width: 1200px) {
+    .hero-section {
+      background-attachment: fixed; /* Parallax effect */
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  /* For Tablets (iPad) and smaller screens, disable parallax and adjust image size */
+  @media (max-width: 1024px) {
+    .hero-section {
+      background-attachment: scroll; /* Disable parallax on tablets */
+      background-size: cover; /* Ensure image covers the section */
+      background-position: center center;
+    }
+
+    .hero-content {
+      width: 100%; /* Full width on tablets */
+      text-align: center; /* Center the text */
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-left: 10%;
+    }
+
+    .btn {
+      margin-left: 40%;
+    }
+  }
+
+  /* For Mobile Screens (iPhone and smaller), adjust the image behavior */
+  @media (max-width: 576px) {
+    .hero-section {
+      background-attachment: scroll; /* Disable parallax effect on small screens */
+      background-size: cover; /* Ensure image covers the section */
+      background-position: center center;
+    }
+
+    .hero-content {
+      width: 100%; /* Full width */
+      text-align: center; /* Center text */
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+    }
+
+    .btn-lg {
+      margin-left: 32%;
+    }
+  }
+
+/* Style de la Section Hero */
+.hero {
+    position: relative;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+    background-size: cover; /* Rend l'image responsive */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Films en Vedette - Section juste après Hero */
+  /* Conteneur du carrousel */
+   /* Conteneur du carrousel */
+   .carousel-container {
+    position: relative;
+    overflow: hidden; /* Cache le débordement pour un effet de carrousel */
+    padding: 30px 0;
+    background-color: #f8f9fa;
+}
+
+.carousel-inner {
+    display: flex;
+    animation: scroll-left 30s linear infinite; /* Animation de défilement automatique */
+    transition: transform 0.5s ease;
+}
+
+/* Animation de défilement de gauche à droite */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.btn {
+    justify-content: center;
+
+}
+/* Carte de film */
+.film-card {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.film-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.film-card:hover {
+    transform: scale(1.05); /* Zoom au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+.film-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Modifier la taille des cartes sur les écrans plus petits */
+@media (max-width: 768px) {
+    .film-card {
+        width: 100%; /* 100% de la largeur pour les petits écrans (mobile) */
+    }
+}
+
+@media (max-width: 480px) {
+    .film-card {
+        width: 100%; /* 100% de la largeur pour les très petits écrans */
+    }
+}
