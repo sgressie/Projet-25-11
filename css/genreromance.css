@@ -1,37 +1,67 @@
-
-body, html{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
-.parallax-section{
-    height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-#section1{
-    background-image: url('/img/Fond\ 2.jpg');
-}
-
-.img-section{
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #FFD9E4;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.logo {
+  height: 60px;
+  width: auto;
+  position: fixed;
+}
+
+.parallax-section {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#section1 {
+  background-image: url('/img/Romance/Fond\ 2.jpg');
+}
+
+.img-section {
+  display: flex;
+  padding-top: 50px;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
-img{
+
+img {
   width: 20em;
   height: 30em;
   border-radius: 15em 15em 0em 0em;
   padding-top: 25px;
   display: flex;
 }
-h1{
-  color:white;
+
+h1 {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+h4{
+  color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
