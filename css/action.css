@@ -1,6 +1,7 @@
 body, html{
     margin: 0;
     padding: 0;
+    background-color: #000000;
 }
 /*********************************************************************************NAV BAR*********************************************************************************************************/
 /* Navbar avec fond jaune et hauteur épaisse */
@@ -170,13 +171,12 @@ body, html{
 }
 
 /* Films en Vedette - Section juste après Hero */
-  /* Conteneur du carrousel */
    /* Conteneur du carrousel */
    .carousel-container {
     position: relative;
     overflow: hidden; /* Cache le débordement pour un effet de carrousel */
     padding: 30px 0;
-    background-color: #f8f9fa;
+    background-color: #000000;
 }
 
 .carousel-inner {
@@ -195,10 +195,15 @@ body, html{
     }
 }
 
-.btn {
-    justify-content: center;
-
+.btn-primary{
+  background-color: #ffcc00;
+  border: none;
 }
+
+.btn-primary:hover{
+    background-color: #000000;
+}
+
 /* Carte de film */
 .film-card {
     margin-bottom: 20px;
@@ -226,6 +231,10 @@ body, html{
     font-weight: bold;
 }
 
+.fas{
+    color: #ffcc00;
+}
+
 /* Modifier la taille des cartes sur les écrans plus petits */
 @media (max-width: 768px) {
     .film-card {
@@ -238,3 +247,171 @@ body, html{
         width: 100%; /* 100% de la largeur pour les très petits écrans */
     }
 }
+
+/* Offres d'abonnement */
+.card-body {
+    text-align: center;
+  }
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .card-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  .btn-custom {
+    background-color: #ffcc00;
+    color: white;
+    font-weight: bold;
+  }
+  .btn-custom:hover {
+    background-color: #000000;
+    color: white;
+  }
+
+ /* Section des avis clients */
+.reviews {
+    padding: 50px 0;
+    background-color: #000000;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .review-text {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .reviewer {
+    text-align: left;
+  }
+  
+  .reviewer-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .reviewer-rating {
+    color: #f39c12;
+    font-size: 1.2em;
+  }
+  
+  .cta {
+    margin-top: 50px;
+  }
+  
+  .cta h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .cta .btn {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta .btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  .genre-block {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out; /* Animation de l'échelle */
+  }
+  
+  .genre-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .genre-content {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .genre-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .genre-description {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .btn-explorer {
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation sur le bouton */
+  }
+
+  .btn-explorer:hover {
+    background-color: #e6b800;
+    transform: scale(1.1); /* Agrandir au survol */
+  }
+
+  .genre-block:hover {
+    transform: scale(1.05); /* Légère animation sur le bloc */
+  }

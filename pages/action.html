@@ -10,9 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- Lien pour les icônes (font awesome) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Lien vers Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Style CSS personnalisé -->
     <link rel="stylesheet" href="../css/action.css">
 </head>
+<body> 
 <header>
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container-fluid">
@@ -25,7 +28,7 @@
         </div>
       </nav>      
 </header>
-<body>  
+
     <!-- Hero Section with Parallax Effect -->
     <div class="hero-section">
         <div class="hero-content">
@@ -240,7 +243,7 @@
         <!-- Premier avantage : Large catalogue -->
         <div class="col-md-6 mb-4">
           <div class="d-flex align-items-center">
-            <i class="fas fa-film fa-2x me-3"></i> 
+            <i class="fas fa-film fa-2x me-3 icon yellow"></i> 
             <div>
               <h5 style="color: black;">Large catalogue</h5>
               <p style="color: black;">Un énorme choix de films d'action, pour tous les goûts et toutes les époques.</p>
@@ -251,7 +254,7 @@
         <!-- Deuxième avantage : Nouveautés -->
         <div class="col-md-6 mb-4">
           <div class="d-flex align-items-center">
-            <i class="fas fa-sync-alt fa-2x me-3"></i>
+            <i class="fas fa-sync-alt fa-2x me-3 icon yellow"></i>
             <div>
               <h5 style="color: black;">Nouveautés</h5>
               <p style="color: black;">Chaque mois, découvrez les dernières sorties de films d'action, pour ne jamais manquer les nouveautés du genre.</p>
@@ -292,7 +295,7 @@
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
           <div class="card-header text-white"style="background-color: black;">
-            <h5 class="card-title">Essentiel</h5>
+            <h5 class="card-title text-center">Essentiel</h5>
           </div>
           <div class="card-body">
             <p class="card-price">9,99€ / mois</p>
@@ -307,7 +310,7 @@
       <!-- Card Standard -->
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
-          <div class="card-header text-white"style="background-color: black;">
+          <div class="card-header text-white text-center" style="background-color: black; border-radius: none;">
             <h5 class="card-title">Standard</h5>
           </div>
           <div class="card-body">
@@ -323,7 +326,7 @@
       <!-- Card Premium -->
       <div class="col-12 col-md-6 col-lg-4 mb-4">
         <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
-          <div class="card-header text-white"style="background-color: black;">
+          <div class="card-header text-white text-center"style="background-color: black;">
             <h5 class="card-title">Premium</h5>
           </div>
           <div class="card-body">
@@ -338,7 +341,132 @@
     </div>
   </div>
 
+   <!-- Section Offres d'abonnement-->
+  <section class="reviews">
+    <div class="container" style="background-color: black;">
+      <h2 data-aos="fade-up" class="section-title" style="color: white;">Avis clients</h2>
+      <p data-aos="fade-up" class="section-subtitle" style="color: white;">Ce que nos abonnés pensent de nos films d'action !</p>
+      
+      <div class="reviews-list">
+        <div class="review-card" data-aos="fade-up">
+          <div class="review-content">
+            <p class="review-text">"Des films d'action à couper le souffle ! L'abonnement vaut vraiment le coup, surtout avec les nouvelles sorties chaque mois. Je suis un grand fan des scènes de combats et des poursuites palpitantes, et je n'ai jamais été déçu !"</p>
+            <div class="reviewer">
+              <p class="reviewer-name">Julien L.</p>
+              <p class="reviewer-rating">★★★★★</p>
+            </div>
+          </div>
+        </div>
   
+        <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-content">
+            <p class="review-text">"Une offre d'abonnement complète avec des films très diversifiés. Les films d'action sont super bien choisis, mais il manque parfois quelques classiques du genre. Cependant, je suis satisfaite des options de streaming en haute qualité."</p>
+            <div class="reviewer">
+              <p class="reviewer-name">Sophie T.</p>
+              <p class="reviewer-rating">★★★★☆</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-content">
+            <p class="review-text">"Abonnement au top ! Les films d’action sont disponibles en illimité, et la plateforme est très intuitive. J'adore les films avec des effets spéciaux impressionnants et les thrillers, et je trouve toujours mon bonheur ici !"</p>
+            <div class="reviewer">
+              <p class="reviewer-name">Maxime D.</p>
+              <p class="reviewer-rating">★★★★★</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="review-content">
+            <p class="review-text">"Bien, mais quelques films manquent à l’appel ! Le service est rapide et l’expérience de visionnage est agréable. Par contre, il serait sympa d’ajouter plus de films classiques des années 90."</p>
+            <div class="reviewer">
+              <p class="reviewer-name">Isabelle M.</p>
+              <p class="reviewer-rating">★★★☆☆</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="review-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="review-content">
+            <p class="review-text">"Depuis que j’ai souscrit à cet abonnement, j'ai pu découvrir des films d'action que je n'aurais jamais vus autrement. Les suggestions sont toujours excellentes et adaptées à mes goûts. À recommander sans hésitation !"</p>
+            <div class="reviewer">
+              <p class="reviewer-name">Thomas V.</p>
+              <p class="reviewer-rating">★★★★★</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Sixième avis -->
+        <div class="review-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="review-content">
+            <p class="review-text">"Une expérience incroyable ! La variété des films d'action est impressionnante, et la qualité d'image est impeccable. Je suis ravi de mon abonnement, surtout avec les films exclusifs disponibles chaque mois. Un excellent rapport qualité-prix."</p>
+            <div class="reviewer">
+              <p class="reviewer-name">Lucas R.</p>
+              <p class="reviewer-rating">★★★★★</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <div class="container mt-5">
+    <h2 class="text-center mb-5" style="color: white;">Explorez nos genres de films</h2>
+
+    <div class="row">
+      <!-- Genre Romance -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="genre-block">
+          <img src="../img/Action/amourouf.webp" alt="Film romance L'Amour Ouf" class="genre-image">
+          <div class="genre-content">
+            <h3 class="genre-title">Romance</h3>
+            <p class="genre-description">Les films romantiques célèbrent l'amour, les relations et les émotions profondes. Laissez-vous emporter par des histoires touchantes.</p>
+            <a href="#" class="btn btn-explorer">Explorer</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Genre Disney -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="genre-block">
+          <img src="../img/Action/vaiana2.jpg" alt="Film Disney Vaiana 2" class="genre-image">
+          <div class="genre-content">
+            <h3 class="genre-title">Disney</h3>
+            <p class="genre-description">Plongez dans l'univers magique de Disney, où l'aventure et la fantaisie se mêlent pour offrir des histoires captivantes pour tous les âges.</p>
+            <a href="#" class="btn btn-explorer">Explorer</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Genre Horror -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="genre-block">
+          <img src="../img/Action/smile2.jpg" alt="Film d'horreur Smile 2" class="genre-image">
+          <div class="genre-content">
+            <h3 class="genre-title">Horreur</h3>
+            <p class="genre-description">Les films d'horreur vous plongent dans l'inconnu et l'effroi. Préparez-vous à sursauter avec des thrillers et des histoires terrifiantes.</p>
+            <a href="#" class="btn btn-explorer">Explorer</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Genre Drame -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="genre-block">
+          <img src="../img/Action/royaume.jpg" alt="Film drame Le Royaume" class="genre-image">
+          <div class="genre-content">
+            <h3 class="genre-title">Drame</h3>
+            <p class="genre-description">Les films dramatiques capturent les luttes intérieures, les émotions humaines et les événements marquants de la vie. Parfaits pour ceux qui aiment une narration profonde.</p>
+            <a href="#" class="btn btn-explorer">Explorer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS JS -->
