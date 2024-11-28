@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Genre de films, genre comédie, genre horreur, genre action, genre drame, genre fantaisy, genre adventure, genre romance.">
+  <meta name="description" content="Découvrez une sélection de films romantiques en streaming. Profitez de classiques et de nouveautés qui feront battre votre cœur. Regardez des histoires d'amour émouvantes, où que vous soyez. Plus tout les Genre de films, genre comédie, genre horreur, genre action, genre drame, genre fantaisy, genre adventure, genre romance.">
   <title>Genre Romance</title>
   <!-- Liens CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dis/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="/css/genreromance.css" rel="stylesheet">
 
 </head>
@@ -37,21 +37,21 @@
   <div class="container">
     <div class="intro">
       <h4>Découvrez Nos Avantages</h4>
-      <p>Profitez d'un large catalogue, des dernières nouveautés, sans publicité, et en qualité HD/4K.</p>
+      <p class="p-avantages">Profitez d'un large catalogue, des dernières nouveautés, sans publicité, et en qualité HD/4K.</p>
     </div>
     <div class="features">
       <div class="feature">
-        <img src="/img/Romance/Image.jpg" class="feature-img" alt="Accès illimité">
+        <img src="/img/Romance/Acces illimités.png" class="feature-img" alt="Accès illimité">
         <h3>Accès Illimité</h3>
         <p>Accédez à tout notre contenu, partout.</p>
       </div>
       <div class="feature">
-        <img src="/img/Romance/Image.jpg" class="feature-img" alt="Nouveautés hebdomadaires">
+        <img src="/img/Romance/Actualités.png" class="feature-img" alt="Nouveautés hebdomadaires">
         <h3>Actualités.</h3>
         <p>Chaque semaine, des nouveautés.</p>
       </div>
       <div class="feature">
-        <img src="/img/Romance/Image.jpg" class="feature-img" alt="Sans pub">
+        <img src="/img/Romance/No ad.png" class="feature-img" alt="Sans pub">
         <h3>Visionnage Sans Pub</h3>
         <p>Profitez de vos contenus sans pub.</p>
       </div>
@@ -60,135 +60,119 @@
   <!-- Fin Avantages -->
 
   <!-- Films en vedette  -->
-  <div class="container mt-5 ">
+  <div class="container mt-5">
+    <h4>Films en Vedette</h4>
+    <div data-aos="fade-up">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-10 d-flex justify-content-between">
-      <!-- Vidéo 1 -->
-      <div class="col-6 col-md-3 mb-3 video-item">
-        <div class="position-relative">
-          <img src="/img/Romance/Image.jpg" class=".video-item-img" alt="Film 1">
-          <!-- Bouton Play -->
-          <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
-            data-bs-target="#videoModal1">
-            <i class="fas fa-play"></i>
-          </button>
+        <!-- Vidéo 1 -->
+        <div class="col-6 col-md-3 mb-3 video-item">
+            <div class="position-relative">
+                <img src="/img/Romance/Jeanne du Barry.jpg" class="video-item-img" alt="Film 1">
+                <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
+                    data-bs-target="#videoModal1">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+            <h5>Jeanne du barry</h5>
         </div>
-        <h5>Film 1</h5>
-        <p>Quelques détails sur le film 1...</p>
-      </div>
-      <!-- Vidéo 2 -->
-      <div class="col-6 col-md-3 mb-3 video-item">
-        <div class="position-relative">
-          <img src="/img/Romance/Image.jpg" class=".video-item-img" alt="Film 2">
-          <!-- Bouton Play -->
-          <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
-            data-bs-target="#videoModal2">
-            <i class="fas fa-play"></i>
-          </button>
+        <!-- Vidéo 2 -->
+        <div class="col-6 col-md-3 mb-3 video-item">
+            <div class="position-relative">
+                <img src="/img/Romance/La Chronique des Bridgerton.jpg" class="video-item-img" alt="Film 2">
+                <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
+                    data-bs-target="#videoModal2">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+            <h5>La Chronique des Bridgerton</h5>
         </div>
-        <h5>Film 2</h5>
-        <p>Quelques détails sur le film 2...</p>
-      </div>
-      <!-- Vidéo 3 -->
-      <div class="col-6 col-md-3 mb-3 video-item">
-        <div class="position-relative">
-          <img src="/img/Romance/Image.jpg" class=".video-item-img" alt="Film 3">
-          <!-- Bouton Play -->
-          <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
-            data-bs-target="#videoModal3">
-            <i class="fas fa-play"></i>
-          </button>
+        <!-- Vidéo 3 -->
+        <div class="col-6 col-md-3 mb-3 video-item hide-on-mobile-tablet">
+            <div class="position-relative">
+                <img src="/img/Romance/La La Land.jpg" class="video-item-img" alt="Film 3">
+                <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
+                    data-bs-target="#videoModal3">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+            <h5>La La Land</h5>
         </div>
-        <h5>Film 3</h5>
-        <p>Quelques détails sur le film 3...</p>
-      </div>
-      <!-- Vidéo 4 -->
-      <div class="col-6 col-md-3 mb-3 video-item">
-        <div class="position-relative">
-          <img src="/img/Romance/Image.jpg" class=".video-item-img" alt="Film 3">
-          <!-- Bouton Play -->
-          <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
-            data-bs-target="#videoModal3">
-            <i class="fas fa-play"></i>
-          </button>
+        <!-- Vidéo 4 -->
+        <div class="col-6 col-md-3 mb-3 video-item hide-on-mobile-tablet">
+            <div class="position-relative">
+                <img src="/img/Romance/Eaux Profondes.jpg" class="video-item-img" alt="Film 4">
+                <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
+                    data-bs-target="#videoModal4">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+            <h5>Eaux Profonds</h5>
         </div>
-        <h5>Film 4</h5>
-        <p>Quelques détails sur le film 4...</p>
-      </div>
     </div>
-  </div>
+</div>
+</div>
 
-
-  <!-- Modales pour afficher les vidéos -->
-  <!-- Modal 1 -->
-  <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
+<!-- Modales pour afficher les vidéos -->
+<!-- Modal 1 -->
+<div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel1">Bande-annonce 1</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel1">JEANNE DU BARRY | Bande-annonce</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="465" height="315" src="https://www.youtube.com/embed/TM1zhNSTSyI?si=GXF8kGUz7Yy2dN4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="modal-body">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/FHMDG5ZtQpM?si=q0yzizfShukVAVfE"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> allow="accelerometer; autoplay;
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Modal 2 -->
-  <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
+<!-- Modal 2 -->
+<div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel2">Bande-annonce 2</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel2">LA CHRONIQUE DE BRIDGERTON | Bande-annonce</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="465" height="315" src="https://www.youtube.com/embed/q4HW2CVtEq8?si=P76HcMPNfDqzXGh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="modal-body">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ExdK7w6A2tM" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Modal 3 -->
-  <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
+<!-- Modal 3 -->
+<div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel3">Bande-annonce 3</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel3">LA LA LAND | Bande-annonce</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="465" height="315" src="https://www.youtube.com/embed/jOIba1EI6a4?si=YObGCFzRRETNeQeq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="modal-body">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ExdK7w6A2tM" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Modal 4 -->
-  <div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel4" aria-hidden="true">
+<!-- Modal 4 -->
+<div class="modal fade" id="videoModal4" tabindex="-1" aria-labelledby="videoModalLabel4" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel4">Bande-annonce 4</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel4">EAUX PROFONDES | Bande-annonce</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="465" height="315" src="https://www.youtube.com/embed/JwrM2uXTTR8?si=eHumQBbouU8wEAp3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="modal-body">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/ExdK7w6A2tM" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
+
   <!-- Fin Films vedette -->
 
   <!-- Offres d'abonnement -->
@@ -198,10 +182,12 @@
       <div class="col-md-4">
         <div class="card">
           <div class="card-body text-center">
-            <h5 class="card-title">Essentiel</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, neque aliquid
-              consequatur dolor asperiores assumenda perspiciatis mollitia aspernatur fugiat porro soluta praesentium ex
-              officia facilis sed repellat optio, quisquam sint?</p>
+            <h4 class="card-title">Essentiel</h4>
+            <ul>
+              <li>Accès limité</li>
+              <li>qualité HD</li>
+              <li>1 écrans</li>
+            </ul>
             <a href="#" class="btn btn-primary">Choisir Essentiel</a>
           </div>
         </div>
@@ -211,10 +197,12 @@
       <div class="col-md-4">
         <div class="card">
           <div class="card-body text-center">
-            <h5 class="card-title">Standard</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate quisquam
-              quos soluta laudantium eum id labore nisi, eius culpa neque reiciendis, magnam consequatur. Facere, esse.
-              Earum assumenda molestias facere?</p>
+            <h4 class="card-title">Standard</h4>
+            <ul>
+              <li>Catalogue étendu</li>
+              <li>Full HD</li>
+              <li>2 écrans</li>
+            </ul>
             <a href="#" class="btn btn-primary">Choisir Standard</a>
           </div>
         </div>
@@ -224,10 +212,12 @@
       <div class="col-md-4">
         <div class="card">
           <div class="card-body text-center">
-            <h5 class="card-title">Premium</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, consequuntur quasi
-              nobis ut deleniti unde ad veritatis officia cum error omnis fugiat eligendi quia aperiam minus eius
-              inventore, hic autem.</p>
+            <h4 class="card-title">Premium</h4>
+            <ul>
+              <li>Catalogue complet</li>
+              <li>4k</li>
+              <li>4 écrans</li>
+            </ul>
             <a href="#" class="btn btn-primary">Choisir Premium</a>
           </div>
         </div>
@@ -238,13 +228,13 @@
 
   <!-- Avis Clients -->
   <div class="testimonials">
-    <h1 class="title">Avis Clients</h1>
+    <h4>Avis Clients</h4>
     <div class="border-title"></div>
 
     <div class="testimonial-container">
       <!-- Avis 1 -->
       <div class="testimonial">
-        <img src="/img/Romance/Image.jpg" class="testimonial-img" alt="...">
+        <img src="/img/Romance/Profile 3.jpg"class="testimonial-img" alt="...">
         <div class="name">Léa Martin</div>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -259,7 +249,7 @@
 
       <!-- Avis 2 -->
       <div class="testimonial">
-        <img src="/img/Romance/Image.jpg" class="testimonial-img" alt="...">
+        <img src="/img/Romance/Profile 1.jpg" class="testimonial-img" alt="...">
         <div class="name">Hugo Durand</div>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -274,7 +264,7 @@
 
       <!-- Avis 3 -->
       <div class="testimonial">
-        <img src="/img/Romance/Image.jpg" class="testimonial-img" alt="...">
+        <img src="/img/Romance/Profile 2.jpg" class="testimonial-img" alt="...">
         <div class="name">Sofia Lefevre</div>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -288,7 +278,7 @@
 
       <!-- Avis 4 -->
       <div class="testimonial">
-        <img src="/img/Romance/Image.jpg" class="testimonial-img" alt="...">
+        <img src="/img/Romance/Profile 4.jpg" class="testimonial-img" alt="...">
         <div class="name">Lucas Bernard</div>
         <div class="stars">
           <i class="fa-solid fa-star"></i>
@@ -306,142 +296,140 @@
 
   <!-- Tuiles de Catégories -->
   <div class="container my-5">
-    <h2 class="title">Explorer Nos Genres</h2>
+    <h4>Explorer Nos Genres</h4>
     <div class="border-title"></div>
 
-    <!-- Carousel Bootstrap -->
-    <div id="genreCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <!-- Première diapositive -->
-        <div class="carousel-item active">
-          <div class="row">
-            <!-- Genre 1 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="category-tile category-tile-action">
-                <img src="/img/Romance/Image.jpg" alt="Action">
-                <h5>Action</h5>
-                <button class="btn btn-explore btn-explore-action">Explorer</button>
-              </div>
-            </div>
-            <!-- Genre 2 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="category-tile category-tile-romance">
-                <img src="/img/Romance/Image.jpg" alt="Romance">
-                <h5>Romance</h5>
-                <button class="btn btn-explore btn-explore-romance">Explorer</button>
-              </div>
-            </div>
-            <!-- Genre 3 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="category-tile category-tile-sci-fi">
-                <img src="/img/Romance/Image.jpg" alt="Science-fiction">
-                <h5>Science-fiction</h5>
-                <button class="btn btn-explore btn-explore-sci-fi">Explorer</button>
-              </div>
-            </div>
-            <!-- Genre 4 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="category-tile category-tile-comedy">
-                <img src="/img/Romance/Image.jpg" alt="Comedy">
-                <h5>Comedy</h5>
-                <button class="btn btn-explore btn-explore-comedy">Explorer</button>
-              </div>
+    <!-- Categories -->
+    <div data-aos="zoom-in">
+    <div class="container mt-6">
+      <div class="row">
+        <!-- Genre 1 -->
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="/img/Romance/Film Horreur.jpg" class="card-img-top" alt="Horreur">
+            <div class="card-body text-center">
+              <h5 class="card-title">Horreur</h5>
+              <button class="btn btn-dark">Explorer</button>
             </div>
           </div>
         </div>
-
-        <!-- Deuxième diapositive -->
-        <div class="carousel-item">
-          <div class="row">
-            <!-- Genre 5 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="category-tile category-tile-horror">
-                <img src="/img/Romance/Image.jpg" alt="Horror">
-                <h5>Horror</h5>
-                <button class="btn btn-explore btn-explore-horror">Explorer</button>
-              </div>
-            </div>
-            <!-- Genre 6 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="category-tile category-tile-drama">
-                <img src="/img/Romance/Image.jpg" alt="Drama">
-                <h5>Drama</h5>
-                <button class="btn btn-explore btn-explore-drama">Explorer</button>
-              </div>
-            </div>
-            <!-- Genre 7 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="category-tile category-tile-thriller">
-                <img src="/img/Romance/Image.jpg" alt="Thriller">
-                <h5>Thriller</h5>
-                <button class="btn btn-explore btn-explore-thriller">Explorer</button>
-              </div>
-            </div>
-            <!-- Genre 8 -->
-            <div class="col-md-3 col-sm-6 mb-4">
-              <div class="category-tile category-tile-adventure">
-                <img src="/img/Romance/Image.jpg" alt="Adventure">
-                <h5>Adventure</h5>
-                <button class="btn btn-explore btn-explore-adventure">Explorer</button>
-              </div>
+    
+        <!-- Genre 2 -->
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="/img/Romance/Film Drame.jpg" class="card-img-top" alt="Drame">
+            <div class="card-body text-center">
+              <h5 class="card-title">Drame</h5>
+              <button class="btn btn-dark">Explorer</button>
             </div>
           </div>
         </div>
+    
+        <!-- Genre 3 -->
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="/img/Romance/Film Disney.jpg" class="card-img-top" alt="Disney">
+            <div class="card-body text-center">
+              <h5 class="card-title">Disney</h5>
+              <button class="btn btn-dark">Explorer</button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Genre 4 -->
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="/img/Romance/Film Action.jpg" class="card-img-top" alt="Action">
+            <div class="card-body text-center">
+              <h5 class="card-title">Action</h5>
+              <button class="btn btn-dark">Explorer</button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Genre 5 -->
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100">
+            <img src="/img/Romance/Film Science-Fiction.jpg" class="card-img-top" alt="Science-fiction">
+            <div class="card-body text-center">
+              <h5 class="card-title">Science-fiction</h5>
+              <button class="btn btn-dark">Explorer</button>
+            </div>
+          </div>
+        </div>
+              <!-- Genre 6 -->
+              <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                  <div class="card h-100">
+                    <img src="/img/Romance/Eaux Profondes.jpg" class="card-img-top" alt="Science-fiction">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Romance</h5>
+                      <button class="btn btn-dark">Explorer</button>
+                    </div>
+                  </div>
+                </div>
       </div>
-
-      <!-- Contrôles de Navigation (Flèches) -->
-      <a class="carousel-control-prev" href="#genreCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Précédent</span>
-      </a>
-      <a class="carousel-control-next" href="#genreCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Suivant</span>
-      </a>
     </div>
   </div>
   <!-- Fin Catégories -->
 
+  <div class="actor-card">
+    <div class="actor-image">
+      <img src="/img/Romance/Leonardo Dicaprio.jpg" alt="Image de l'acteur" />
+    </div>
+    <div class="actor-info">
+      <h2 class="actor-name">Leonardo DiCaprio</h2>
+      <p class="actor-role">Rôle dans le film : Jack Dawson</p>
+      <p class="actor-film">Film : Titanic (1997)</p>
+      <p class="actor-description">
+        Leonardo DiCaprio incarne le rôle de Jack Dawson, un artiste pauvre mais charismatique,
+        dans le film romantique emblématique Titanic. Son interprétation touchante et son alchimie
+        avec Kate Winslet ont marqué des générations de spectateurs.
+      </p>
+    </div>
+  </div>
 
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <h5>Contact :</h5>
-          <ul class="list-unstyled">
-            <li><a href="mailto:contact@example.com" class="text-white">contact@Cinéflix.fr</a></li>
-            <li><a href="tel:+1234567890" class="text-white">+1 234 567 890</a></li>
-          </ul>
-        </div>
 
-        <div class="col-12 col-md-4">
-          <h5>Liens :</h5>
-          <ul class="list-unstyled">
-            <li><a href="/pages/mentionslegales.html" target="_blank" class="text-white">Mention Légales</a></li>
-            <li><a href="/pages/politiquedeconfidentialité.html" class="text-white">Politique de confidentialité</a></li>
-          </ul>
-        </div>
-
-        <div class="col-12 col-md-4">
-          <h5>Suivez-nous :</h5>
-          <ul class="socials text-decoration: none;">
-            <a href="#" target="_blank">
-              <i class="fab fa-facebook-f"></i></a></li>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <a href="#" target="_blank">
-              <i class="fab fa-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
+<!-- Footer -->
+<footer class="custom-footer">
+  <div class="custom-footer-container">
+    <div class="custom-footer-row">
+      <!-- Section Contact -->
+      <div class="custom-footer-col">
+        <h5>Contact</h5>
+        <ul class="custom-footer-links">
+          <li><a href="mailto:contact@cineflix.fr" class="custom-footer-link">contact@cineflix.fr</a></li>
+          <li><a href="tel:+1234567890" class="custom-footer-link">+1 234 567 890</a></li>
+        </ul>
       </div>
-
-      <div class="mt-4">
-        <p>&copy; 2024 Cinéflix.com. Tous droits réservés.</p>
+      
+      <!-- Section Liens -->
+      <div class="custom-footer-col">
+        <h5>Liens</h5>
+        <ul class="custom-footer-links">
+          <li><a href="/mentions-legales" class="custom-footer-link">Mentions Légales</a></li>
+          <li><a href="/confidentialite" class="custom-footer-link">Politique de Confidentialité</a></li>
+        </ul>
+      </div>
+      
+      <!-- Section Réseaux Sociaux -->
+      <div class="custom-footer-col custom-footer-social">
+        <h5>Suivez-nous</h5>
+        <div class="custom-footer-social-icons">
+          <a href="#" class="custom-footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="custom-footer-social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="custom-footer-social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
-  </footer>
+    
+    <!-- Texte Copyright -->
+    <div class="custom-footer-text-center">
+      <p>&copy; 2024 Cinéflix. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
 
 
 
@@ -450,15 +438,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<<<<<<< HEAD
-=======
+    <script>
+      function jumpToSlide(index) {
+        var carousel = new bootstrap.Carousel(document.getElementById('genreCarousel'));
+        carousel.to(index);
+      }
+    </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
->>>>>>> 5625cf34d903557d7a88e81aa37746095348391e
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
 </body>
 
 </html>
