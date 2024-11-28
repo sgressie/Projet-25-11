@@ -1,0 +1,49 @@
+/* Navbar personnalisée */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+/* Style pour la page principale */
+main {
+    margin-top: 80px; /* Marge pour compenser la navbar fixe */
+}
+
+/* Carte de genre */
+.card {
+    border: none; /* Supprime la bordure de la carte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile pour les cartes */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Bouton "Explorer" */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
