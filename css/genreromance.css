@@ -1,23 +1,26 @@
-body,
-html {
+/* Global styles */
+html, body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: Arial, sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   color: black;
 }
+
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 50px;
-  background-color:rgb(79, 79, 79);
+  background-color: black;
   display: flex;
-
   z-index: 1000;
 }
+
 .logo {
   height: 60px;
   width: auto;
@@ -25,30 +28,33 @@ html {
   border: none;
 }
 
+/* Parallax Section */
 .parallax-section {
-  background: url('/img/Romance/marcheeee.jpg') no-repeat center center/cover;
-  height: 100vh; /* Full height of the viewport */
-  position: relative; /* Allows absolute positioning of content */
+  background: url('/img/Romance/Titanic.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
   display: flex;
-  justify-content: center;  /* Center horizontally */
-  align-items: center;     /* Align at the bottom */
-  text-align: center;        /* Center the text */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Content Styling */
 .parallax-content {
-  color: rgb(0, 0, 0);              /* Text color */
-  padding-bottom: 30px;      /* Space from bottom */
-  width: 100%;               /* Ensure it spans full width */
+  color: rgb(0, 0, 0);
+  padding-bottom: 30px;
+  width: 100%;
 }
 
-button{
+button {
   border: none;
   border-radius: 10px;
 }
-button:hover{
+
+button:hover {
   transform: scale(1.05);
 }
+
+/* Image Section */
 .img-section {
   display: flex;
   padding-top: 70px;
@@ -56,49 +62,73 @@ button:hover{
   align-items: center;
   flex-wrap: wrap;
 }
-.video-item-img{
+
+.video-item-img {
   height: 500px;
-
-
 }
 
-/*FIN RESPONSIVE HERO SECTION*/
-.container{
-  background:transparent;
+/* Container Styling */
+.container {
+  background: transparent;
   padding-top: 20px;
 }
-p{
+
+p {
   color: rgb(0, 0, 0);
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
+
+.p-avantages {
+  color: white;
+  align-items: center;
+}
+
 h1 {
   color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
   flex-wrap: wrap;
-
 }
-h3{
+
+h3 {
   color: black;
 }
-h4{
-  color: rgb(0, 0, 0);
+
+h4 {
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 0px;
+  padding-top: 20px;
+  font-size: 1.8rem;
 }
 
-/*AVANTAGES*/
-/* Container Styling */
-.container {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 1200px;
+h5 {
+  color: white;
 }
 
-/* Features Section Styling */
+.btn-primary {
+  --bs-btn-bg: black;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-bg: black;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-border-color: black;
+}
+
+.btn-dark {
+  background-color: black;
+  --bs-btn-hover-bg: black;
+}
+
+li {
+  text-align: left;
+}
+
+/* Features Section */
 .features {
   display: flex;
   justify-content: space-around;
@@ -107,93 +137,96 @@ h4{
   margin-top: 20px;
 }
 
-/* Individual Feature Styling */
 .feature {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 10px;
   width: 26%;
-  padding: 20px 10px;  /* Adjust padding */
+  padding: 20px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   display: flex;
-  flex-direction: column;  /* Arrange content vertically */
-  justify-content: center;  /* Center content vertically */
-  align-items: center;      /* Center content horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 230px;
 }
 
-/* Image Styling */
 .feature-img {
   width: 90px;
   height: 90px;
-  border-radius: 50%;       /* Makes the image circular */
-  object-fit: cover;        /* Ensures the image fills the circle */
-  margin-bottom: 15px;      /* Space below the image */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
   border: none;
   padding-bottom: 0;
 }
 
-/* Feature Hover Effect */
 .feature:hover {
   transform: scale(1.05);
 }
 
-/* Responsive Layout for Smaller Screens */
+/* Responsive Layout */
 @media (max-width: 1024px) {
   .feature {
-    width: 45%;  /* Adjusted for medium screens */
+    width: 45%;
   }
 }
 
 @media (max-width: 600px) {
   .feature {
-    width: 100%;  /* Full width for small screens */
+    width: 100%;
   }
 }
-/*FIN AVANTAGES*/
 
-/*FILMS EN VEDETTE*/
-.play-btn {
-  font-size: 30px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  border: none;
-  border-radius: 50%;
-  padding: 20px;
-}
-
-.play-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
+/* Featured Movies */
 .video-item {
   position: relative;
-  width: 300px;
-  justify-content: space-evenly;
+  text-align: center;
+  white-space: nowrap;
+  padding-top: 50px;
 }
 
-.video-item img {
-  width: 100%;
-  height: 25rem;
-  border-radius: 15em 15em 0em 0em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.video-item-img {
+  display: inline-block;
+  margin-right: 15px;
+  width: 17rem;
+  height: 28rem;
+  border: solid white 5px;
+  border-radius: 15rem 15rem 0rem 0rem;
   object-fit: cover;
-
 }
 
-.modal-content {
-  position: relative;
+.play-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
 }
 
-.modal-body {
-  padding: 0;
-  margin: 0;
+.modal-title {
+  color: black;
 }
-/*FIN FILMS EN VEDETTE*/
 
-/*****CSS Avis Clients*****/
+/* Mobile and Tablet Media Queries */
+@media (max-width: 992px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Client Testimonials */
 .title {
   color: black;
   font-size: 2rem;
@@ -215,7 +248,7 @@ h4{
   margin: 20px;
 }
 
-.testimonial:hover{
+.testimonial:hover {
   transform: scale(1.05);
 }
 
@@ -254,103 +287,202 @@ h4{
   font-size: 0.9rem;
   color: #555;
 }
-/*****CSS Fin Avis Clients*****/
 
-/*****CSSS Catégories*****/
-.container{
+/* Categories Section */
+.card {
+  height: 100%;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container {
   padding-top: 0;
 }
 
-.category-tile-action, 
-.category-tile-romance, 
-.category-tile-sci-fi, 
-.category-tile-comedy, 
-.category-tile-horror, 
-.category-tile-drama, 
-.category-tile-thriller, 
-.category-tile-adventure {
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #000000;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.custom-footer-container{
+  max-width: 1800px;
+
+}
+@media (max-width: 768px) {
+  .row {
+    gap: 20px;
+  }
+}
+
+/* Footer */
+.custom-footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+
+.custom-footer-container {
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.custom-footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.custom-footer-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.custom-footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.custom-footer-link:hover {
+  color: #00aaff;
+}
+
+.custom-footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.custom-footer-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.custom-footer-social-icon {
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.custom-footer-social-icon:hover {
+  color: #00aaff;
+  transform: scale(1.2);
+}
+
+.custom-footer-text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.custom-footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .custom-footer-col {
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+.actor-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.category-tile-action img,
-.category-tile-romance img,
-.category-tile-sci-fi img,
-.category-tile-comedy img,
-.category-tile-horror img,
-.category-tile-drama img,
-.category-tile-thriller img,
-.category-tile-adventure img {
+.actor-image img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.actor-info {
+  margin-left: 30px;
+  flex: 1;
+}
+
+.actor-name {
+  font-size: 2rem;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.actor-role,
+.actor-film {
+  font-size: 1.2rem;
+  color: #000000;
+  margin: 10px 0;
+}
+
+.actor-description {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .actor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .actor-info {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .actor-image img {
     width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    max-width: 300px;
+    height: auto;
+  }
 }
-
-.category-tile-action h5,
-.category-tile-romance h5,
-.category-tile-sci-fi h5,
-.category-tile-comedy h5,
-.category-tile-horror h5,
-.category-tile-drama h5,
-.category-tile-thriller h5,
-.category-tile-adventure h5 {
-    margin-bottom: 10px;
-}
-
-.btn-explore-action,
-.btn-explore-romance,
-.btn-explore-sci-fi,
-.btn-explore-comedy,
-.btn-explore-horror,
-.btn-explore-drama,
-.btn-explore-thriller,
-.btn-explore-adventure {
-    background-color: #007bff;
-    color: white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.btn-explore-action:hover,
-.btn-explore-romance:hover,
-.btn-explore-sci-fi:hover,
-.btn-explore-comedy:hover,
-.btn-explore-horror:hover,
-.btn-explore-drama:hover,
-.btn-explore-thriller:hover,
-.btn-explore-adventure:hover {
-    background-color: #0056b3;
-}
-
-/* Contrôles de Navigation (Flèches) */
-.carousel-control-prev,
-.carousel-control-next {
-    color: black;
-    position: absolute;
-    top: 50%; /* Centrer verticalement */
-    transform: translateY(-50%); /* Ajuste le centrage */
-    width: 5%; /* Réduit la largeur de la flèche */
-    height: 100%; /* Prend toute la hauteur */
-    z-index: 10; /* Pour être au-dessus du contenu */
-}
-
-.carousel-control-prev {
-    left: -60px; /* Déplace la flèche de gauche plus à l'extérieur */
-}
-
-.carousel-control-next {
-    right: -60px; /* Déplace la flèche de droite plus à l'extérieur */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    color: black;
-    border-radius: none;
-}
-
-/*****CSS Fin Catégories*****/
