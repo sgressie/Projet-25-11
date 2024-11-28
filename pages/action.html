@@ -6,8 +6,10 @@
     <title>Films d'Action</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-      <!-- AOS CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Lien pour les icônes (font awesome) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- Style CSS personnalisé -->
     <link rel="stylesheet" href="../css/action.css">
 </head>
@@ -27,8 +29,8 @@
     <!-- Hero Section with Parallax Effect -->
     <div class="hero-section">
         <div class="hero-content">
-            <h1 class>Bienvenue dans l'univers des Films d'Action</h1>
-            <p class=>Explorez des films qui vous propulsent dans l'action, sans retour possible.</p>
+            <h1 style="color: white;">Bienvenue dans l'univers des Films d'Action</h1>
+            <p style="color: white;">Explorez des films qui vous propulsent dans l'action, sans retour possible.</p>
             <a href="#films" class="btn btn-lg">Je m'abonne</a>
         </div>
     </div>
@@ -37,9 +39,8 @@
  
     
       <!-- Conteneur du carrousel -->
-       <div class="container">
       <div class="carousel-container d-none d-lg-block">
-        <div class="container">
+        <div class="container"style="background-color: black;">
             <div class="carousel-inner">
                 <!-- Film 1 -->
                 <div class="film-card">
@@ -51,31 +52,31 @@
                 <div class="film-card">
                     <img src="../img/Action/furiosa.jpg" alt="Film 2 Furiosa">
                     <div class="film-title">Furiosa</div>
-                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal2">Voir la bande annonce</button>
                 </div>
                 <!-- Film 3 -->
                 <div class="film-card">
                     <img src="../img/Action/monkeyman.webp" alt="Film 3 Monkey Man">
                     <div class="film-title">Monkey Man</div>
-                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal3">Voir la bande annonce</button>
                 </div>
                 <!-- Film 4 -->
                 <div class="film-card">
                     <img src="../img/Action/civilwar.webp" alt="Film 4 Civil War">
                     <div class="film-title">Civil War</div>
-                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal4">Voir la bande annonce</button>
                 </div>
                 <!-- Film 5 -->
                 <div class="film-card">
                     <img src="../img/Action/batman.jpg" alt="Film 5 Batman">
                     <div class="film-title">Batman</div>
-                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal5">Voir la bande annonce</button>
                 </div>
                 <!-- Film 6 -->
                 <div class="film-card">
                     <img src="../img/Action/fastandfurious.jpg" alt="Film 6 Fast and Furious X">
                     <div class="film-title">Fast & Furious X</div>
-                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                    <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal6">Voir la bande annonce</button>
                 </div>
             </div>
         </div>
@@ -83,7 +84,7 @@
 </div>
 
 <!-- Conteneur pour les films en colonnes (mobile et tablette) -->
-<div class="container d-block d-lg-none">
+<div class="container d-block d-lg-none" style="background-color: black;">
     <div class="row justify-content-center">
         <!-- Film 1 -->
         <div class="col-12 col-sm-6 col-md-6 mb-4">
@@ -98,7 +99,7 @@
             <div class="film-card text-center">
                 <img src="../img/Action/furiosa.jpg" alt="Film 2 Furiosa">
                 <div class="film-title">Furiosa</div>
-                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal2">Voir la bande annonce</button>
             </div>
         </div>
         <!-- Film 3 -->
@@ -106,7 +107,7 @@
             <div class="film-card text-center">
                 <img src="../img/Action/monkeyman.webp" alt="Film 3 Monkey Man">
                 <div class="film-title">Monkey Man</div>
-                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal3">Voir la bande annonce</button>
             </div>
         </div>
         <!-- Film 4 -->
@@ -114,7 +115,7 @@
             <div class="film-card text-center">
                 <img src="../img/Action/civilwar.webp" alt="Film 4 Civil War">
                 <div class="film-title">Civil War</div>
-                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal4">Voir la bande annonce</button>
             </div>
         </div>
         <!-- Film 5 -->
@@ -122,7 +123,7 @@
             <div class="film-card text-center">
                 <img src="../img/Action/batman.jpg" alt="Film 5 Batman">
                 <div class="film-title">Batman</div>
-                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal5">Voir la bande annonce</button>
             </div>
         </div>
         <!-- Film 6 -->
@@ -130,7 +131,7 @@
             <div class="film-card text-center">
                 <img src="../img/Action/fastandfurious.jpg" alt="Film 6 Fast and Furious X">
                 <div class="film-title">Fast & Furious X</div>
-                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal1">Voir la bande annonce</button>
+                <button class="btn btn-primary d-flex justify-content-center mx-auto" data-bs-toggle="modal" data-bs-target="#trailerModal6">Voir la bande annonce</button>
             </div>
         </div>
         </div>
@@ -143,7 +144,7 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="trailerModalLabel1">Bande annonce de Vénom</h5>
+          <h5 class="modal-title" id="trailerModalLabel1">Bande annonce - Vénom</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -152,6 +153,192 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal pour Furiosa -->
+<div class="modal fade" id="trailerModal2" tabindex="-1" aria-labelledby="trailerModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trailerModalLabel2">Bande annonce - Furiosa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/foh7lTT42JU" title="Bande annonce Furiosa" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal pour Monkey Man -->
+  <div class="modal fade" id="trailerModal3" tabindex="-1" aria-labelledby="trailerModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trailerModalLabel3">Bande annonce - Monkey Man</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/0Qk1wR-MZyY" title="Bande annonce Monkey Man" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal pour Civil War -->
+  <div class="modal fade" id="trailerModal4" tabindex="-1" aria-labelledby="trailerModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trailerModalLabel4">Bande annonce - Civil War</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/dKrVegVI0Us" title="Bande annonce Civil War" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal pour Batman -->
+  <div class="modal fade" id="trailerModal5" tabindex="-1" aria-labelledby="trailerModalLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trailerModalLabel5">Bande annonce - Batman</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/r9J7c8g6gto" title="Bande annonce Batman" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal pour Fast & Furious X -->
+  <div class="modal fade" id="trailerModal6" tabindex="-1" aria-labelledby="trailerModalLabel6" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="trailerModalLabel6">Bande annonce - Fast & Furious X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/8kFvlu4ozlg" title="Bande annonce Fast & Furious X" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Avantages-->
+  <div class="container mt-5">
+    <div class="card shadow-lg p-4" style="background-color: #ffcc00;">
+    <div class="card shadow-lg p-4" style="background-color: white;">
+      <h2 class="card-title text-center mb-4">Avantages de notre Site de Films d'Action</h2>
+      <p class="text-center mb-4"style="color: black;">Plongez dans l'univers palpitant des films d'action avec notre plateforme. Nous vous proposons une expérience cinématographique unique avec un large choix de films en haute définition, accessibles sur tous vos appareils.</p>
+      
+      <div class="row">
+        <!-- Premier avantage : Large catalogue -->
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-film fa-2x me-3"></i> 
+            <div>
+              <h5 style="color: black;">Large catalogue</h5>
+              <p style="color: black;">Un énorme choix de films d'action, pour tous les goûts et toutes les époques.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deuxième avantage : Nouveautés -->
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-sync-alt fa-2x me-3"></i>
+            <div>
+              <h5 style="color: black;">Nouveautés</h5>
+              <p style="color: black;">Chaque mois, découvrez les dernières sorties de films d'action, pour ne jamais manquer les nouveautés du genre.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Troisième avantage : Sans publicité -->
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-ban fa-2x text-warning me-3"></i>
+            <div>
+              <h5 style="color: black;">Sans publicité</h5>
+              <p style="color: black;">Profitez de votre expérience sans interruption grâce à l'absence totale de publicités. Détendez-vous et plongez directement dans l'action.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quatrième avantage : Qualité HD/4K -->
+        <div class="col-md-6 mb-4">
+          <div class="d-flex align-items-center">
+            <i class="fas fa-star fa-2x me-3"></i>
+            <div>
+              <h5 style="color: black;">Qualité HD/4K</h5>
+              <p style="color: black;">Découvrez nos dernières nouveautés en haute définition ou en 4K pour une expérience cinéma incroyable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Section Offres d'abonnement-->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Card Essentiel -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <div class="card-header text-white"style="background-color: black;">
+            <h5 class="card-title">Essentiel</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-price">9,99€ / mois</p>
+            <p>Accès limité au catalogue de films</p>
+            <p>Qualité HD</p>
+            <p>Pas de publicités</p>
+            <a href="#" class="btn btn-custom">Choisir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card Standard -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <div class="card-header text-white"style="background-color: black;">
+            <h5 class="card-title">Standard</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-price">14,99€ / mois</p>
+            <p>Accès à un large catalogue de films</p>
+            <p>Qualité Full HD</p>
+            <p>2 appareils simultanément</p>
+            <a href="#" class="btn btn-custom">Choisir</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card Premium -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <div class="card-header text-white"style="background-color: black;">
+            <h5 class="card-title">Premium</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-price">19,99€ / mois</p>
+            <p>Accès complet à tous les films</p>
+            <p>Qualité 4K</p>
+            <p>4 appareils simultanément</p>
+            <a href="#" class="btn btn-custom">Choisir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS JS -->
