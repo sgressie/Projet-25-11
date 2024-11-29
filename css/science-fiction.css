@@ -29,7 +29,7 @@ nav{
   background-repeat: no-repeat;
 }
 .herofluid {
-  background-image: url(../img/galaxygif.gif);
+  background-image: url(../img/Science-fiction/galaxygif.gif);
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 100vh;
@@ -111,42 +111,42 @@ tailwind.config.js module.exports = {
 }
 
 .bite {
-  background-image: url(../img/matrixxxx.jpg);
+  background-image: url(../img/Science-fiction/matrixxxx.jpg);
   background-size: cover;
   background-position: center;
 }
 .bite2 {
-  background-image: url(../img/interstellarrrrr.jpg);
+  background-image: url(../img/Science-fiction/interstellarrrrr.jpg);
   background-size: cover;
   background-position: center;
 }
 .bite3 {
-  background-image: url(../img/retourrrrrr.jpeg);
+  background-image: url(../img/Science-fiction/retourrrrrr.jpeg);
   background-size: cover;
   background-position: center;
 }
 .bite4 {
-  background-image: url(../img/starwarrrrr.webp);
+  background-image: url(../img/Science-fiction/starwarrrrr.webp);
   background-size: cover;
   background-position: center;
 }
 .bite5 {
-  background-image: url(../img/Action.png);
+  background-image: url(../img/Science-fiction/Action.png);
   background-size: cover;
   background-position: center;
 }
 .bite6 {
-  background-image: url(../img/horreur.png);
+  background-image: url(../img/Science-fiction/horreur.png);
   background-size: cover;
   background-position: center;
 }
 .bite7 {
-  background-image: url(../img/anime.png);
+  background-image: url(../img/Science-fiction/anime.png);
   background-size: cover;
   background-position: center;
 }
 .bite8 {
-  background-image: url(../img/Comedie.png);
+  background-image: url(../img/Science-fiction/Comedie.png);
   background-size: cover;
   background-position: center;
 }
