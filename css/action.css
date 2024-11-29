@@ -785,6 +785,107 @@ body, html{
     }
   }
   
+  /* Style du Footer */
+.custom-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
   
+  .custom-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
   
+  .custom-footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permet de gérer les colonnes sur mobile */
+  }
+  
+  .custom-footer-col {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  
+  .custom-footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .custom-footer-links {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .custom-footer-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0;
+    display: block;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-footer-link:hover {
+    color: #ffcc00; /* Changer la couleur au survol */
+  }
+  
+  /* Section Réseaux sociaux */
+  .custom-footer-social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .custom-footer-social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-footer-social-icon:hover {
+    color: #ffcc00; /* Changer la couleur au survol */
+  }
+  
+  /* Texte Copyright */
+  .custom-footer-text-center {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .custom-footer-text-center p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsivité pour les tablettes et petits écrans */
+  @media (max-width: 1024px) {
+    .custom-footer-col {
+      width: 45%;
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Responsivité pour les mobiles */
+  @media (max-width: 767px) {
+    .custom-footer-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .custom-footer-col {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .custom-footer-social-icons {
+      justify-content: center;
+    }
+  
+    .custom-footer-text-center p {
+      font-size: 0.8rem;
+    }
+  }
   
