@@ -156,7 +156,7 @@ li {
 
 .feature-img {
   width: 90px;
-  height: 90px;
+  height: 75px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
