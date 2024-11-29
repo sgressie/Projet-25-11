@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /mentions
+
+Sitemap: https://Projet-25-11/sitemap.xml
