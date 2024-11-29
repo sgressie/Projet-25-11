@@ -1,0 +1,46 @@
+*{
+    color: white;
+}
+
+h1{
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.logo-cine{
+    width: 113px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+/*****************************************************/
+
+.tablette{
+    text-align: center;
+    width: 700px;
+    margin-top: 150px;
+}
+
+.accordion-button{
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #A182B8;
+    color: white;
+}
+
+.accordion-body{
+    background-color: #322434;
+}
+
+.validation{
+    margin-top: 50px;
+}
+
+.popup{
+    color: black;
+}
