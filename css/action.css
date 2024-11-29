@@ -146,7 +146,6 @@ body, html{
 .hero {
     position: relative;
     height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
     background-size: cover; /* Rend l'image responsive */
     display: flex;
     justify-content: center;
@@ -171,19 +170,24 @@ body, html{
 }
 
 /* Films en Vedette - Section juste après Hero */
-   /* Conteneur du carrousel */
-   .carousel-container {
+/* Conteneur du carrousel */
+.carousel-container {
     position: relative;
     overflow: hidden; /* Cache le débordement pour un effet de carrousel */
-    padding: 30px 0;
-    background-color: #000000;
+    padding: 30px;
+    background-color: #000000;   
 }
 
 .carousel-inner {
     display: flex;
     animation: scroll-left 30s linear infinite; /* Animation de défilement automatique */
     transition: transform 0.5s ease;
+    justify-content: space-between;  /* Crée un espace égal entre les cartes */
 }
+
+.carousel-container:hover .carousel-inner {
+    animation-play-state: paused; /* Met en pause l'animation du carrousel au survol */
+  }
 
 /* Animation de défilement de gauche à droite */
 @keyframes scroll-left {
@@ -211,6 +215,7 @@ body, html{
     cursor: pointer;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .film-card img {
@@ -248,27 +253,123 @@ body, html{
     }
 }
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounceIn {
+  animation: bounceIn 1s ease-out;
+}
+
 /* Offres d'abonnement */
 .card-body {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacement entre les éléments */
+    height: 100%;
   }
+  
+  /* Titre de la carte */
   .card-title {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 15px; /* Espacement entre le titre et le prix */
   }
+  
+  /* Prix de la carte */
   .card-price {
     font-size: 2rem;
     font-weight: bold;
     color: #000000;
+    margin-bottom: 15px; /* Espacement entre le prix et la description */
   }
+  
+  /* Bouton personnalisé */
   .btn-custom {
     background-color: #ffcc00;
     color: white;
     font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Assure que le bouton se comporte comme un élément en ligne */
+    max-width: 200px; /* Limite la largeur maximale du bouton */
+    width: auto; /* Permet au bouton de prendre sa largeur naturelle */
+    margin-left: auto; /* Centre le bouton à gauche */
+    margin-right: auto; /* Centre le bouton à droite */
   }
+  
   .btn-custom:hover {
     background-color: #000000;
     color: white;
+  }
+  
+  /* Media Queries */
+  
+  /* Tablettes : max-width: 1024px */
+  @media (max-width: 1024px) {
+    /* Section des cartes d'abonnement */
+    .col-md-6 {
+      flex: 1 0 45%; /* Chaque carte prend 45% de la largeur sur tablette */
+      margin-bottom: 20px;
+    }
+  
+    /* Section des avis clients */
+    .review-card {
+      width: 45%; /* Réduit la largeur des cartes à 45% sur tablette */
+    }
+  }
+  
+  /* Mobiles : max-width: 767px */
+  @media (max-width: 767px) {
+    /* Section des cartes d'abonnement */
+    .col-12 {
+      flex: 1 0 100%; /* Chaque carte prend 100% de la largeur sur téléphone */
+      margin-bottom: 20px;
+    }
+  
+    /* Bouton personnalisé */
+    .btn-custom {
+      width: 80%; /* Le bouton prend 80% de la largeur sur téléphone */
+      padding: 12px 0; /* Augmente le padding pour une meilleure visibilité */
+    }
+  
+    /* Section des avis clients */
+    .reviews-list {
+      flex-direction: column; /* Affiche les avis en colonne sur téléphone */
+      gap: 15px;
+    }
+  
+    .review-card {
+      width: 100%; /* Les cartes prennent toute la largeur sur téléphone */
+    }
+  
+    /* Titre de la section et sous-titre */
+    .section-title {
+      font-size: 2em;
+    }
+  
+    .section-subtitle {
+      font-size: 1em;
+    }
+  }
+  
+  /* Optionnel : Maximiser la largeur des boutons sur grands écrans */
+  @media (min-width: 1025px) {
+    .btn-custom {
+      width: auto; /* Pour un rendu plus naturel sur les grands écrans */
+    }
   }
 
  /* Section des avis clients */
@@ -277,24 +378,29 @@ body, html{
     background-color: #000000;
   }
   
+  /* Conteneur principal de la section */
   .container {
     width: 80%;
     margin: 0 auto;
     text-align: center;
   }
   
+  /* Titre principal de la section */
   .section-title {
     font-size: 2.5em;
     font-weight: bold;
-    color: #333;
+    color: #fff; /* Titre blanc pour contraster avec le fond noir */
+    margin-bottom: 20px;
   }
   
+  /* Sous-titre de la section */
   .section-subtitle {
     font-size: 1.2em;
-    color: #555;
+    color: #aaa; /* Gris clair pour le sous-titre */
     margin-bottom: 40px;
   }
   
+  /* Liste des avis */
   .reviews-list {
     display: flex;
     flex-wrap: wrap;
@@ -302,6 +408,7 @@ body, html{
     gap: 30px;
   }
   
+  /* Carte d'avis */
   .review-card {
     background-color: #fff;
     padding: 20px;
@@ -310,108 +417,374 @@ body, html{
     width: 30%;
     min-width: 250px;
     transition: transform 0.3s ease;
+    margin-bottom: 30px; /* Ajoute un espacement entre les lignes de cartes */
   }
   
+  /* Effet au survol de la carte */
   .review-card:hover {
     transform: translateY(-10px);
   }
   
+  /* Texte de l'avis */
   .review-text {
     font-size: 1.1em;
     color: #666;
     margin-bottom: 20px;
   }
   
+  /* Informations sur l'auteur de l'avis */
   .reviewer {
     text-align: left;
   }
   
+  /* Nom du reviewer */
   .reviewer-name {
     font-weight: bold;
     color: #333;
   }
   
+  /* Note du reviewer */
   .reviewer-rating {
-    color: #f39c12;
+    color: #ffcc00; /* Jaune pour la note */
     font-size: 1.2em;
   }
   
-  .cta {
-    margin-top: 50px;
+  /* Media Queries */
+  
+  /* Tablettes : max-width 1024px */
+  @media (max-width: 1024px) {
+    .reviews-list {
+      justify-content: center; /* Centre les cartes sur les tablettes */
+    }
+  
+    .review-card {
+      width: 45%; /* Réduit la largeur des cartes à 45% sur tablette */
+      min-width: 200px;
+    }
   }
   
-  .cta h3 {
-    font-size: 2em;
-    margin-bottom: 20px;
+  /* Mobiles : max-width 767px */
+  @media (max-width: 767px) {
+    .reviews-list {
+      flex-direction: column; /* Affiche les cartes en colonne sur mobile */
+      align-items: center; /* Centre les cartes */
+    }
+  
+    .review-card {
+      width: 80%; /* Les cartes prennent 80% de la largeur de l'écran sur mobile */
+      min-width: 200px;
+      margin-bottom: 20px; /* Ajoute un espacement vertical entre les cartes */
+    }
+  
+    /* Ajuste les titres pour mieux les adapter aux petits écrans */
+    .section-title {
+      font-size: 2em; /* Plus petit pour les mobiles */
+    }
+  
+    .section-subtitle {
+      font-size: 1em; /* Réduit légèrement la taille */
+    }
   }
   
-  .cta p {
-    font-size: 1.1em;
-    color: #555;
-    margin-bottom: 30px;
-  }
-  
-  .cta .btn {
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .cta .btn:hover {
-    background-color: #0056b3;
-  }
-
-
-  .genre-block {
-    margin-bottom: 30px;
-    border-radius: 10px;
+/* Section genres */
+.genre-block {
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    transition: transform 0.3s ease-in-out; /* Animation de l'échelle */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 400px;
+    margin-bottom: 30px;
+  }
+  
+  .genre-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   }
   
   .genre-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .genre-block:hover .genre-image {
+    transform: scale(1.05);
   }
   
   .genre-content {
-    padding: 20px;
-    background-color: #fff;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    height: 100%;
   }
   
   .genre-title {
     font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
+    margin-bottom: 10px;
   }
   
   .genre-description {
     font-size: 1rem;
-    color: #555;
+    margin-bottom: 15px;
   }
-
+  
   .btn-explorer {
     background-color: #ffcc00;
-    color: #fff;
-    border: none;
+    color: white;
     padding: 10px 20px;
-    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
     margin-top: 15px;
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
     text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation sur le bouton */
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  
   .btn-explorer:hover {
-    background-color: #e6b800;
-    transform: scale(1.1); /* Agrandir au survol */
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Media Queries */
+  
+  /* Pour les écrans de bureau (4 colonnes sur grands écrans) */
+  @media (min-width: 1200px) {
+    .genre-content {
+      padding: 20px;
+    }
+  
+    .btn-explorer {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+    }
+  
+    /* Pour afficher 4 colonnes sur les grands écrans */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .col-md-3 {
+      flex: 1 1 22%; /* 4 colonnes par ligne, avec un petit espace entre chaque */
+      margin: 10px; /* Ajoute de l'espacement entre les colonnes */
+    }
+  }
+  
+  /* Pour les tablettes et petits écrans */
+  @media (max-width: 1199px) {
+    .col-md-3 {
+      flex: 1 1 45%; /* 2 colonnes par ligne pour les tablettes */
+    }
+  }
+  
+  /* Pour les téléphones */
+  @media (max-width: 767px) {
+    .genre-content {
+      padding: 10px;
+      align-items: center;
+    }
+  
+    .btn-explorer {
+      width: 80%;
+      max-width: 200px;
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* Pour occuper toute la largeur sur les petits écrans */
+    .col-md-3 {
+      flex: 1 1 100%; /* Une seule colonne par ligne sur les téléphones */
+    }
   }
 
-  .genre-block:hover {
-    transform: scale(1.05); /* Légère animation sur le bloc */
+/* Section public cible0 */
+#meilleurs-heros h2 {
+    font-size: 2.5rem; /* Taille de police pour les grands écrans */
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
   }
+  
+  /* Sous-titre de la section */
+  #meilleurs-heros .section-subtitle {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  /* Card Styles */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Permet de garder un espacement régulier */
+    height: 100%; /* Garder toutes les cartes à la même hauteur */
+  }
+  
+  .card-body {
+    text-align: center;
+    flex-grow: 1; /* Permet de remplir l'espace restant */
+    padding: 20px;
+  }
+  
+  /* Image à l'intérieur des cartes */
+  .card-img-top {
+    width: 100%; /* Assurer que l'image occupe toute la largeur de la carte */
+    height: 200px; /* Hauteur fixe pour les images */
+    object-fit: cover; /* Garder l'image proportionnelle */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Responsivité pour les appareils plus petits */
+  @media (max-width: 1024px) {
+    /* Ajuste la taille du titre sur tablette */
+    #meilleurs-heros h2 {
+      font-size: 2rem; /* Taille plus petite sur tablette */
+    }
+  
+    /* 2 colonnes sur tablette */
+    .col-md-4 {
+      flex: 0 0 48%; /* 2 cartes côte à côte sur les écrans moyens */
+      margin: 1%; /* Ajouter une petite marge entre les cartes */
+    }
+  
+    .row {
+      justify-content: center; /* Centrer les cartes sur tablette */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* Ajuste la taille du titre sur mobile */
+    #meilleurs-heros h2 {
+      font-size: 1.5rem; /* Taille plus petite sur mobile */
+    }
+  
+    /* Sur mobile, garder une seule colonne */
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centrer les cartes */
+    }
+  
+    /* Élargir les cartes pour les téléphones */
+    .col-12 {
+      width: 100%; /* Augmente la largeur des cartes sur mobile (100%) */
+      margin-bottom: 30px; /* Ajouter un espacement entre les cartes */
+    }
+  
+    /* Ajuster le padding et la taille des cartes */
+    .card {
+      width: 95%; /* Augmenter la largeur des cartes sur mobile */
+      margin-left: auto;
+      margin-right: auto; /* Centrer les cartes */
+    }
+  
+    .card-body {
+      padding: 15px; /* Moins de padding sur mobile */
+    }
+  
+    /* Ajuste la taille du bouton sur mobile */
+    .btn-custom {
+      width: 80%; /* Bouton plus large sur mobile */
+      max-width: 250px;
+      margin: 20px auto; /* Centrer le bouton */
+    }
+  }
+
+  /* Style pour la section des bénéfices */
+#benefits {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  #benefits .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #benefits .section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Icônes */
+  .card-body i {
+    color: #ffcc00;
+  }
+  
+  /* Responsivité */
+  @media (max-width: 1024px) {
+    .col-md-3 {
+      flex: 0 0 48%; /* 2 cartes côte à côte sur tablette */
+      margin: 1%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .col-md-3 {
+      flex: 0 0 100%; /* Une carte sur mobile */
+      margin: 10px 0;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  }
+  
+  
+  
+  

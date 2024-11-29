@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Films d'Action</title>
+    <title>Cinéflix | Les Meilleurs Films d'Action"</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- AOS CSS -->
@@ -14,6 +14,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Style CSS personnalisé -->
     <link rel="stylesheet" href="../css/action.css">
+
+      <!-- Meta Description -->
+      <meta name="description" content="Découvrez les meilleurs films d'action avec Cinéflix. Profitez d'un abonnement flexible et accédez à un contenu explosif avec des héros emblématiques, des scènes épiques et des avantages exclusifs comme le mode hors ligne et des recommandations personnalisées.">
+
+    
+    <meta property="og:title" content="Cinéflix | Les Meilleurs Films d'Action">
+    <meta property="og:image" content="../img/Action/venom.jpg"> 
+    <meta property="og:url" content="https://www.cineflix.com/films-action">
+    <meta property="og:type" content="website">
+
+   
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cinéflix - Films d'Action Époustouflants">
+    <meta name="twitter:description" content="Accédez à des films d'action incontournables sur Cinéflix. Des héros puissants, des scènes de combat spectaculaires et des avantages exclusifs comme le mode hors ligne et les recommandations personnalisées.">
+    <meta name="twitter:image" content="https://www.cineflix.com/img/action-banner-twitter.jpg"> 
+
 </head>
 <body> 
 <header>
@@ -28,11 +44,11 @@
         </div>
       </nav>      
 </header>
-
+<main>
     <!-- Hero Section with Parallax Effect -->
     <div class="hero-section">
         <div class="hero-content">
-            <h1 style="color: white;">Bienvenue dans l'univers des Films d'Action</h1>
+            <h1 class="animated-title" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-out-back" data-aos-once="true" style="color: white;">Bienvenue dans l'univers des Films d'Action</h1>
             <p style="color: white;">Explorez des films qui vous propulsent dans l'action, sans retour possible.</p>
             <a href="#films" class="btn btn-lg">Je m'abonne</a>
         </div>
@@ -42,6 +58,7 @@
  
     
       <!-- Conteneur du carrousel -->
+       <div class="container">
       <div class="carousel-container d-none d-lg-block">
         <div class="container"style="background-color: black;">
             <div class="carousel-inner">
@@ -85,9 +102,12 @@
         </div>
     </div>
 </div>
+</div>
+
+
 
 <!-- Conteneur pour les films en colonnes (mobile et tablette) -->
-<div class="container d-block d-lg-none" style="background-color: black;">
+<div class="container d-block d-lg-none" style="background-color: black; padding: 30px;">
     <div class="row justify-content-center">
         <!-- Film 1 -->
         <div class="col-12 col-sm-6 col-md-6 mb-4">
@@ -151,7 +171,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/sM1n7SspD0M" title="Vénom Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="400" src="https://www.youtube.com/watch?v=HyIyd9joTTc" title="Vénom 3 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -166,7 +186,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/foh7lTT42JU" title="Bande annonce Furiosa" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="315" src="https://youtu.be/2P2JwQBi9kQ" title="Bande annonce Furiosa" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -232,70 +252,73 @@
     </div>
   </div>
 
-  <!-- Section Avantages-->
-  <div class="container mt-5">
+<!-- Section Avantages -->
+<div class="animate__animated animate__bounceIn">
+<div class="container mt-5" style="text-align: left;">
     <div class="card shadow-lg p-4" style="background-color: #ffcc00;">
-    <div class="card shadow-lg p-4" style="background-color: white;">
-      <h2 class="card-title text-center mb-4">Avantages de notre Site de Films d'Action</h2>
-      <p class="text-center mb-4"style="color: black;">Plongez dans l'univers palpitant des films d'action avec notre plateforme. Nous vous proposons une expérience cinématographique unique avec un large choix de films en haute définition, accessibles sur tous vos appareils.</p>
-      
-      <div class="row">
-        <!-- Premier avantage : Large catalogue -->
-        <div class="col-md-6 mb-4">
-          <div class="d-flex align-items-center">
-            <i class="fas fa-film fa-2x me-3 icon yellow"></i> 
-            <div>
-              <h5 style="color: black;">Large catalogue</h5>
-              <p style="color: black;">Un énorme choix de films d'action, pour tous les goûts et toutes les époques.</p>
+      <div class="card shadow-lg p-4" style="background-color: white;">
+        <h2 class="card-title text-center mb-4 animate__animated animate__fadeInUp">Avantages de notre Site de Films d'Action</h2>
+        <p class="text-center mb-4" style="color: black;" class="animate__animated animate__fadeInUp animate__delay-1s">Plongez dans l'univers palpitant des films d'action avec notre plateforme. Nous vous proposons une expérience cinématographique unique avec un large choix de films en haute définition, accessibles sur tous vos appareils.</p>
+  
+        <div class="row">
+          <!-- Premier avantage : Large catalogue -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex align-items-center advantage-item animate__animated animate__fadeInLeft">
+              <i class="fas fa-film fa-2x me-3 icon yellow"></i>
+              <div>
+                <h5 style="color: black;">Large catalogue</h5>
+                <p style="color: black;">Un énorme choix de films d'action, pour tous les goûts et toutes les époques.</p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Deuxième avantage : Nouveautés -->
-        <div class="col-md-6 mb-4">
-          <div class="d-flex align-items-center">
-            <i class="fas fa-sync-alt fa-2x me-3 icon yellow"></i>
-            <div>
-              <h5 style="color: black;">Nouveautés</h5>
-              <p style="color: black;">Chaque mois, découvrez les dernières sorties de films d'action, pour ne jamais manquer les nouveautés du genre.</p>
+  
+          <!-- Deuxième avantage : Nouveautés -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex align-items-center advantage-item animate__animated animate__fadeInLeft animate__delay-1s">
+              <i class="fas fa-sync-alt fa-2x me-3 icon yellow"></i>
+              <div>
+                <h5 style="color: black;">Nouveautés</h5>
+                <p style="color: black;">Chaque mois, découvrez les dernières sorties de films d'action, pour ne jamais manquer les nouveautés du genre.</p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Troisième avantage : Sans publicité -->
-        <div class="col-md-6 mb-4">
-          <div class="d-flex align-items-center">
-            <i class="fas fa-ban fa-2x text-warning me-3"></i>
-            <div>
-              <h5 style="color: black;">Sans publicité</h5>
-              <p style="color: black;">Profitez de votre expérience sans interruption grâce à l'absence totale de publicités. Détendez-vous et plongez directement dans l'action.</p>
+  
+          <!-- Troisième avantage : Sans publicité -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex align-items-center advantage-item animate__animated animate__fadeInLeft animate__delay-2s">
+              <i class="fas fa-ban fa-2x text-warning me-3"></i>
+              <div>
+                <h5 style="color: black;">Sans publicité</h5>
+                <p style="color: black;">Profitez de votre expérience sans interruption grâce à l'absence totale de publicités. Détendez-vous et plongez directement dans l'action.</p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Quatrième avantage : Qualité HD/4K -->
-        <div class="col-md-6 mb-4">
-          <div class="d-flex align-items-center">
-            <i class="fas fa-star fa-2x me-3"></i>
-            <div>
-              <h5 style="color: black;">Qualité HD/4K</h5>
-              <p style="color: black;">Découvrez nos dernières nouveautés en haute définition ou en 4K pour une expérience cinéma incroyable.</p>
+  
+          <!-- Quatrième avantage : Qualité HD/4K -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex align-items-center advantage-item animate__animated animate__fadeInLeft animate__delay-3s">
+              <i class="fas fa-star fa-2x me-3"></i>
+              <div>
+                <h5 style="color: black;">Qualité HD/4K</h5>
+                <p style="color: black;">Découvrez nos dernières nouveautés en haute définition ou en 4K pour une expérience cinéma incroyable.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </div>
-
+</div>
+  
+  
   <!-- Section Offres d'abonnement-->
-  <div class="container mt-5">
+<div class="container mt-5">
     <div class="row">
       <!-- Card Essentiel -->
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="col-12 col-md-6 col-lg-4 mb-4 card-container">
         <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
-          <div class="card-header text-white"style="background-color: black;">
-            <h5 class="card-title text-center">Essentiel</h5>
+          <div class="card-header text-white" style="background-color: black;">
+            <h5 class="card-title text-center" style="color: white;">Essentiel</h5>
           </div>
           <div class="card-body">
             <p class="card-price">9,99€ / mois</p>
@@ -308,40 +331,40 @@
       </div>
   
       <!-- Card Standard -->
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="col-12 col-md-6 col-lg-4 mb-4 card-container">
         <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
           <div class="card-header text-white text-center" style="background-color: black; border-radius: none;">
-            <h5 class="card-title">Standard</h5>
+            <h5 class="card-title" style="color: white;">Standard</h5>
           </div>
           <div class="card-body">
             <p class="card-price">14,99€ / mois</p>
             <p>Accès à un large catalogue de films</p>
             <p>Qualité Full HD</p>
-            <p>2 appareils simultanément</p>
+            <p>2 appareils</p>
             <a href="#" class="btn btn-custom">Choisir</a>
           </div>
         </div>
       </div>
   
       <!-- Card Premium -->
-      <div class="col-12 col-md-6 col-lg-4 mb-4">
+      <div class="col-12 col-md-6 col-lg-4 mb-4 card-container">
         <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
-          <div class="card-header text-white text-center"style="background-color: black;">
-            <h5 class="card-title">Premium</h5>
+          <div class="card-header text-white text-center" style="background-color: black;">
+            <h5 class="card-title" style="color: white;">Premium</h5>
           </div>
           <div class="card-body">
             <p class="card-price">19,99€ / mois</p>
-            <p>Accès complet à tous les films</p>
+            <p>Accès complet au catalogue de films</p>
             <p>Qualité 4K</p>
-            <p>4 appareils simultanément</p>
+            <p>4 appareils</p>
             <a href="#" class="btn btn-custom">Choisir</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-   <!-- Section Offres d'abonnement-->
+  
+   <!-- Section Avis clients-->
   <section class="reviews">
     <div class="container" style="background-color: black;">
       <h2 data-aos="fade-up" class="section-title" style="color: white;">Avis clients</h2>
@@ -413,7 +436,7 @@
   </section>
    
   <div class="container mt-5">
-    <h2 class="text-center mb-5" style="color: white;">Explorez nos genres de films</h2>
+    <h2 class="text-center mb-5" style="color: white;">Explorez d'autres genres de films</h2>
 
     <div class="row">
       <!-- Genre Romance -->
@@ -458,7 +481,7 @@
           <img src="../img/Action/royaume.jpg" alt="Film drame Le Royaume" class="genre-image">
           <div class="genre-content">
             <h3 class="genre-title">Drame</h3>
-            <p class="genre-description">Les films dramatiques capturent les luttes intérieures, les émotions humaines et les événements marquants de la vie. Parfaits pour ceux qui aiment une narration profonde.</p>
+            <p class="genre-description">Les films dramatiques capturent les émotions humaines intenses et les défis personnelles. Parfait pour les amateurs de récits touchants.</p>
             <a href="#" class="btn btn-explorer">Explorer</a>
           </div>
         </div>
@@ -466,7 +489,107 @@
     </div>
   </div>
 
+<!-- Section Les Meilleurs Héros d'Action -->
+<div class="container mt-5" id="meilleurs-heros">
+    <div class="section-title text-center">
+      <h2>Les Meilleurs Héros d'Action</h2>
+      <p class="section-subtitle">Découvrez les héros les plus légendaires du genre films d'action. Ces personnages ont marqué l'histoire du cinéma grâce à leurs exploits incroyables et leurs personnalités inoubliables.</p>
+    </div>
+  
+    <div class="row">
+      <!-- Héros 1 : John Wick -->
+      <div class="col-md-4 col-12 mb-4" data-aos="flip-left" data-aos-duration="1200">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <img src="../img/Action/johnwick.webp" alt="John Wick" class="card-img-top" style="border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">John Wick</h5>
+            <p class="card-text">L'un des personnages les plus implacables de l'histoire du cinéma d'action, incarné par Keanu Reeves. Un héros solitaire, expert en combat et à la recherche de vengeance après avoir perdu son chien.</p>
+            <a href="#" class="btn btn-custom">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Héros 2 : Lara Croft -->
+      <div class="col-md-4 col-12 mb-4" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="200">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <img src="../img/Action/laracroft.webp" alt="Lara Croft" class="card-img-top" style="border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Lara Croft</h5>
+            <p class="card-text">Une icône du cinéma d'action, interprétée par Angelina Jolie, elle est l'archéologue aventurière qui explore des tombes et des mystères tout en affrontant des ennemis redoutables.</p>
+            <a href="#" class="btn btn-custom">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Héros 3 : James Bond -->
+      <div class="col-md-4 col-12 mb-4" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="400">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <img src="../img/Action/jamesbond.webp" alt="James Bond" class="card-img-top" style="border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">James Bond</h5>
+            <p class="card-text">Le célèbre agent secret britannique, incarné par Daniel Craig. Son nom est synonyme de sophistication, gadgets, et missions dangereuses à travers le monde.</p>
+            <a href="#" class="btn btn-custom">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 
+<!-- Section Bénéfices d'un abonnement Cinéflix -->
+<div class="container mt-5" id="benefits" style="background-color: black;">
+    <div class="section-title text-center">
+      <h2 style="color: white;">Bénéfices d'un Abonnement Cinéflix</h2>
+      <p class="section-subtitle" style="color: white;">Profitez des avantages exclusifs de Cinéflix et améliorez votre expérience cinéma à la maison avec des fonctionnalités exceptionnelles.</p>
+    </div>
+  
+    <div class="row text-center">
+      <!-- Avantage 1 : Mode Hors Ligne -->
+      <div class="col-md-3 col-12 mb-4">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <div class="card-body">
+            <i class="fas fa-cloud-download-alt fa-3x mb-3"></i>
+            <h5 class="card-title">Mode Hors Ligne</h5>
+            <p class="card-text">Téléchargez vos films et séries préférés pour les regarder où vous voulez, même sans connexion internet.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Avantage 2 : Recommandations Personnalisées -->
+      <div class="col-md-3 col-12 mb-4">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <div class="card-body">
+            <i class="fas fa-thumbs-up fa-3x mb-3"></i>
+            <h5 class="card-title">Recommandations Personnalisées</h5>
+            <p class="card-text">Recevez des suggestions de films et séries basées sur vos préférences et votre historique de visionnage.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Avantage 3 : Aucun Engagement -->
+      <div class="col-md-3 col-12 mb-4">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <div class="card-body">
+            <i class="fas fa-times-circle fa-3x mb-3"></i>
+            <h5 class="card-title">Sans Engagement</h5>
+            <p class="card-text">Abonnez-vous sans contrainte, annulez à tout moment sans frais supplémentaires.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Avantage 4 : Accès Instantané -->
+      <div class="col-md-3 col-12 mb-4">
+        <div class="card shadow-lg" style="border: 24px solid #ffcc00;">
+          <div class="card-body">
+            <i class="fas fa-play fa-3x mb-3"></i>
+            <h5 class="card-title">Accès Instantané</h5>
+            <p class="card-text">Démarrez immédiatement le streaming de milliers de films et séries avec un accès illimité, 24/7.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS JS -->
