@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-color: pink;
   color: black;
 }
 
@@ -16,7 +16,7 @@ html, body {
   left: 0;
   right: 0;
   height: 50px;
-  background-color: black;
+  background-color: pink;
   display: flex;
   z-index: 1000;
 }
@@ -66,6 +66,91 @@ button:hover {
 .video-item-img {
   height: 500px;
 }
+<!-- Films en vedette  -->
+<div class="container mt-5">
+  <h4>Films en Vedette</h4>
+  <div data-aos="fade-up">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <!-- Vidéo 1 -->
+      <div class="col video-item">
+        <div class="position-relative">
+          <img src="/img/Romance/Jeanne du Barry.jpg" class="video-item-img img-fluid" alt="Film 1">
+          <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#videoModal1">
+            <i class="fas fa-play"></i>
+          </button>
+        </div>
+        <h5 class="text-center mt-2">Jeanne du Barry</h5>
+      </div>
+
+      <!-- Vidéo 2 -->
+      <div class="col video-item">
+        <div class="position-relative">
+          <img src="/img/Romance/La Chronique des Bridgerton.jpg" class="video-item-img img-fluid" alt="Film 2">
+          <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#videoModal2">
+            <i class="fas fa-play"></i>
+          </button>
+        </div>
+        <h5 class="text-center mt-2">La Chronique des Bridgerton</h5>
+      </div>
+
+      <!-- Vidéo 3 -->
+      <div class="col video-item">
+        <div class="position-relative">
+          <img src="/img/Romance/La La Land.jpg" class="video-item-img img-fluid" alt="Film 3">
+          <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#videoModal3">
+            <i class="fas fa-play"></i>
+          </button>
+        </div>
+        <h5 class="text-center mt-2">La La Land</h5>
+      </div>
+
+      <!-- Vidéo 4 -->
+      <div class="col video-item">
+        <div class="position-relative">
+          <img src="/img/Romance/Eaux Profondes.jpg" class="video-item-img img-fluid" alt="Film 4">
+          <button class="btn play-btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal" data-bs-target="#videoModal4">
+            <i class="fas fa-play"></i>
+          </button>
+        </div>
+        <h5 class="text-center mt-2">Eaux Profondes</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS personnalisé pour les ajustements -->
+  .video-item-img {
+    width: 100%;
+    height: 250px; /* Hauteur fixe pour uniformiser l'affichage */
+    object-fit: cover;
+    border-radius: 8px;
+    {
+
+  /* Ajustements pour les petits écrans */
+  @media (max-width: 576px) {
+    .video-item-img {
+      height: 200px;
+    }
+  }
+
+  .play-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+  }
+
+  .play-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .video-item h5 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
 
 /* Container Styling */
 .container {
@@ -338,8 +423,8 @@ li {
 
 /* Footer */
 .custom-footer {
-  background-color: #222;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 40px 0;
   width: 100%;
   position: relative;
