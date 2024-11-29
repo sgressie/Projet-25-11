@@ -245,8 +245,8 @@ li {
 }
 
 .parallax{
-    background-image: url(img/babi.jpg);
-    min-height: 500px;
+    background-image: url(/img/drame/babi.jpg);
+    min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -353,6 +353,7 @@ li {
 }
 
 @media screen and (max-width:720px) {
+    
 
     .cadre{
         font-size: 20px;
@@ -377,7 +378,7 @@ li {
 
 
 .carousel-inner{
-    margin-top: 2%;
+    margin-top: 6%;
 }
 @media screen and (max-width:720px) {
     .carousel-inner{
@@ -400,6 +401,8 @@ li {
     font-weight: 900;
     font-size: 25px;
 }
+
+
  
 .acces{
     height: 300px;
@@ -442,11 +445,24 @@ li {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .subscribe-btn {
         font-size: 1rem;
         padding: 10px 20px;
     }
+    .acces{
+        height: 400px;
+    }
+    .card-h3{
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 15px;
+    }
+}
+ 
+.card-title{
+    font-size: 30px;
 }
 
 .card-text p {
@@ -503,7 +519,7 @@ footer{ border-top:2px solid white ;}
   }
 
   .custom-footer-link:hover {
-    color: #ffcc00; 
+    color: #ff0000; 
   }
 
  
@@ -519,7 +535,7 @@ footer{ border-top:2px solid white ;}
   }
 
   .custom-footer-social-icon:hover {
-    color: #ffcc00; 
+    color: #ff0000; 
   }
 
 
@@ -558,4 +574,24 @@ footer{ border-top:2px solid white ;}
     .custom-footer-text-center p {
       font-size: 0.8rem;
     }
+  }
+
+  /* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #1b0404;
+    display: flex;
+    z-index: 1000;
+  }
+  
+  .logo {
+    height: 60px;
+    width: auto;
+    position: fixed;
+    border: none;
   }
