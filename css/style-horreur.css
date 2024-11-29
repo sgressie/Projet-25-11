@@ -1,7 +1,7 @@
 /* Base styles for large screens (desktop) */
 body {
   background-color: black;
-  background-image: url(img/fond-rouge.png);
+  background-image: url(../img/img-horreur/bg-horreur);
   background-attachment: fixed;
   background-size: 200vh;
 }
