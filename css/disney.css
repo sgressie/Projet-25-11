@@ -14,7 +14,7 @@ body{
 .herosection{
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("Images/disney_castle.gif");
+    background-image: url("../img/Disney/disney_castle.gif");
     background-attachment: fixed;
     background-position: top center;
     min-height: 100vh;
